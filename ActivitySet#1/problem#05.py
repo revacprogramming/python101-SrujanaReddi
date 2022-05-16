@@ -2,7 +2,10 @@
 
 
 def computepay(hrs, rte):
-  pay = (hrs-40)*rte*1.5+ 40*rte
+  if hrs>40:
+   pay = (hrs-40)*rte*1.5+ 40*rte
+  else:
+   pay=hrs*rte
   return pay
 
 def main():
